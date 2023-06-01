@@ -1,46 +1,85 @@
-<!DOCTYPE html>
-
 <html>
-
+ 
 <head>
 	<link rel="stylesheet" href="styles.css">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-	
 </head>
-
+ 
 <body>
 	<!-- the entire body must be written by student -->
-	<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-inner carousel slide" id="myCarousel">
-    <div class="carousel-item active first-slide">
-      <img src="https://images.pexels.com/photos/1774303/pexels-photo-1774303.jpeg?cs=srgb&dl=pexels-lady-escabia-1774303.jpg&fm=jpg" class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item second-slide">
-      <img src="https://images.unsplash.com/photo-1605457867610-e990b192418e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Y2Fyb3VzZWx8ZW58MHx8MHx8fDA%3D&w=1000&q=80" class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item third-slide active">
-      <img src="https://www.daysoftheyear.com/wp-content/uploads/carousel-day.jpg" class="d-block w-100" alt="...">
-    </div>
-	  <div class="carousel-item fourth-slide">
-      <img src="https://www.shutterstock.com/image-photo/beautiful-bright-carousel-park-night-260nw-794411371.jpg" class="d-block w-100" alt="...">
-    </div>
-	  <div class="carousel-item fifth-slide">
-      <img src="https://images.unsplash.com/photo-1597172984973-fa1a221fe91d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y2Fyb3VzZWx8ZW58MHx8MHx8fDA%3D&w=1000&q=80" class="d-block w-100" alt="...">
-    </div>
+	<div class="container">
+  <h2>Bootstrap Carousel</h2>
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- here carousel is changing the slide suddenly without any slide but slide is using for smooth transition or slide -->
+  
+  <!-- Wrapper for slides -->
+  <!-- which will wrap the slides instead of list one by one -->
+  <div class="carousel-inner">
+ 
+ 
+  <div class="item first-slide">
+  <img src="https://image.shutterstock.com/image-vector/shopping-online-on-website-mobile-260nw-1206570103.jpg" id ="first_image" alt="Los Angeles" style="width:100%;">
+  <div class="carousel-caption">
+  <h3>First Slide</h3>
+  <p>This is first slide!</p>
   </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon " aria-hidden="true"></span>
-    <span class="visually-hidden left carousel-control glyphicon-chevron-left glyphicon">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-    <span class="carousel-control-next-icon " aria-hidden="true"></span>
-    <span class="visually-hidden right carousel-control glyphicon-chevron-right glyphicon ">Next</span>
-  </button>
-</div>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </div>
+ 
+ 
+  <div class="item second-slide">
+  <img src="https://image.freepik.com/free-vector/digital-marketing-concept-online-shopping-mobile-application_68971-367.jpg" id ="second_image" alt="Chicago" style="width:100%;">
+  <div class="carousel-caption">
+  <h3>Second Slide</h3>
+  <p>This is second slide!</p>
+  </div>
+  </div>
+  
+  <div class="item active third-slide">
+  <img src="https://image.shutterstock.com/image-photo/young-student-watching-lesson-online-260nw-1676998306.jpg" id ="third_image" alt="New York" style="width:100%;">
+  <div class="carousel-caption">
+  <h3>Third Slide</h3>
+  <p>This is third slide!</p>
+  </div>
+  </div>
+ 
+ 
+  <div class="item fourth-slide">
+  <img src="https://lh3.googleusercontent.com/proxy/IAgqXzs8j2pQrGYALfNmFGbn_O2Of6Bc0FGWLVrTJCge30MMXZlQdkYviNExlbgJsYCmdhJkIDLbMEATXQYh8zouE6CCICkV-hSUKpCH-8uKYs5r5RInD8tb1KZWVw" id ="fourth_image" alt="New York" style="width:100%;">
+  <div class="carousel-caption">
+  <h3>Fourth Slide</h3>
+  <p>This is fourth slide!</p>
+  </div>
+  </div>
+ 
+ 
+  <div class="item fifth-slide">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTT3TmYe2w7n0B-5juuJFlR_9duENGn4QEEYSuzXvaPVViYnHYfYYhvccgW5dqV_6p-OKg&usqp=CAU" id ="fifth_image" alt="New York" style="width:100%;">
+  <div class="carousel-caption">
+  <h3>Fifth Slide</h3>
+  <p>This is fifth slide!</p>
+  </div>
+  </div>
+  
+  </div>
+ 
+ 
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+  <span class="glyphicon glyphicon-chevron-left"></span>
+  <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+  <span class="glyphicon glyphicon-chevron-right"></span>
+  <span class="sr-only">Next</span>
+  </a>
+  </div>
+ </div>
+	
+ 
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script type="text/javascript" src="./script.js">
 </script>
-
+ 
 </body>
-
+ 
 </html>
